@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Bootstrap Hands on 3</title>
+</head>
+<body>
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#">Restaurant Demo</a>
+               <!-- Button trigger modal -->
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Inventory
+</button>
+          </div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">RestoDemo Records</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>List of Available items</p>
+            <table class="table table-striped">
+                <thead>
+                    <tr class="border-bottom">
+                      <th scope="col">Item ID</th>
+                      <th scope="col">Item Name</th> 
+                      <th scope="col">Item Price</th> 
+                      <th scope="col">Item Category</th> 
+                      <th scope="col">Action</th> 
+                    </tr>
+                    
+                  </thead>
+                  
+                  <tbody>
+                    <tr>
+                      
+                      <td>F01</td>
+                      <td>Adobo</td>
+                      <td>150</td>
+                      <td>Viand</td>
+                      <td>
+                        <button class="border-0 rounded bg-info">Edit</button>
+                        <button class="bg-danger border-0 rounded bg-info text-light">Delete</button>
+                      </td>
+                     
+                    </tr>
+                    <tr>
+                      
+                        <td>F02</td>
+                        <td>Sisig</td>
+                        <td>100</td>
+                        <td>Viand</td>
+                        <td>
+                            <button class="border-0 rounded bg-info">Edit</button>
+                            <button class="bg-danger border-0 rounded bg-info text-light">Delete</button>    
+                            
+                        </td>
+                      
+                    </tr>
+                    <tr>
+                        <td>F03</td>
+                        <td>Afritada</td>
+                        <td>168</td>
+                        <td>Viand</td>
+                        <td>
+                            <button class="border-0 rounded bg-info">Edit</button>
+                            <button class="bg-danger border-0 rounded bg-info text-light">Delete</button>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>F04</td>
+                        <td>Tinola</td>
+                        <td>150</td>
+                        <td>Viand</td>
+                        <td>
+                            <button class="border-0 rounded bg-info">Edit</button>
+                            <button class="bg-danger border-0 rounded bg-info text-light">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>D01</td>
+                        <td>Buko Juice</td>
+                        <td>25</td>
+                        <td>Drinks</td>
+                        <td>
+                            <button class="border-0 rounded bg-info">Edit</button>
+                            <button class="bg-danger border-0 rounded bg-info text-light">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>D01</td>
+                        <td>Sago't Gulaman</td>
+                        <td>30</td>
+                        <td>Drinks</td>
+                        <td>
+                            <button class="border-0 rounded bg-info">Edit</button>
+                            <button class="bg-danger border-0 rounded bg-info text-light">Delete</button>
+                        </td>
+                    </tr>
+                  </tbody>
+              </table>
+        </div>
+        <div class="modal-footer">
+            <p>Click add button if you want to add more item</p>
+          <button type="button" class="btn btn-primary">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      </nav>
+      
+    <!--Content  -->
+<div class="container">
+
+    <div class="container">
+   <h2>Menu List</h2> 
+    </div>
+
+        <div class="container row">
+            <!-- adobo -->
+
+            <div class="card m-4" style="width: 13rem">
+                <h5 class="card-title text-primary">Adobo</h5>
+                <img src="/images/adobo.jpg" class="card-img-top" alt="PIC1">
+                <div class="card-body">
+                  
+                  <p class="card-text">Good for 3-4 person</p>
+                  <h5>Price 150 php</h5>
+                  <ul>
+                    <li class="text-primary">Viand</li>
+                  </ul>
+                </div>
+              </div>
+            
+              <!-- Sisig -->
+              <div class="card m-4" style="width: 13rem;">
+                <h5 class="card-title text-primary">Sisig</h5>
+                <img src="/images/sisisg.jpg" class="card-img-top h-75" alt="PIC1">
+                <div class="card-body">
+                    <p class="card-text">Good for 3-4 person</p>
+                  <h5>Price 100 php</h5>
+                  <ul>
+                    <li class="text-primary">Viand</li>
+                  </ul>
+                </div>
+              </div>
+                            <!-- Afritada -->
+                            <div class="card m-4" style="width: 13rem;">
+                                <h5 class="card-title text-primary">Afritada</h5>
+                                <img src="/images/afritada.jpg" class="card-img-top h-75" alt="PIC1">
+                                <div class="card-body">
+                                    <p class="card-text">Good for 3-4 person</p>
+                                  <h5>Price 168 php</h5>
+                                  <ul>
+                                    <li class="text-primary">Viand</li>
+                                  </ul>
+                                </div>
+                              </div>
+                                                          <!-- Tinola -->
+                            <div class="card m-4" style="width: 13rem;">
+                                <h5 class="card-title text-primary">Tinola</h5>
+                                <img src="/images/tinola.jpg" class="card-img-top h-75" alt="PIC1">
+                                <div class="card-body">
+                                    <p class="card-text">Good for 3-4 person</p>
+                                  <h5>Price 150 php</h5>
+                                  <ul>
+                                    <li class="text-primary">Viand</li>
+                                  </ul>
+                                </div>
+                              </div>
+
+            </div>
+                          <!-- BELOW -->
+                        <div class="container row">
+                            <!-- Buko juice -->
+                            <div class="card m-5 cols-1" style="width: 13rem;">
+                              <h5 class="card-title text-primary">Buko Juice</h5>
+                              <img src="/images/buko.jpg" class="card-img-top" alt="PIC1">
+                              <div class="card-body">
+                                <h5>Price 25 php</h5>
+                                <ul>
+                                  <li class="text-primary">Drinks</li>
+                                </ul>
+                              </div>
+                            </div>
+
+                            <!-- Sagot Gulaman -->
+                            <div class="card m-5 col-1" style="width: 13rem;">
+                                <h5 class="card-title text-primary">Sago at Gulaman</h5>
+                                <img src="/images/sago.jpg" class="card-img-top" alt="PIC1">
+                                <div class="card-body">
+                                  <h5>Price 30 php</h5>
+                                  <ul>
+                                    <li class="text-primary">Drinks</li>
+                                  </ul>
+                                </div>
+                              </div> 
+                                                                                        <!-- Dropdown -->
+                                                          <div class="dropdown m-5 col-1">
+                                                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                              Tasking?
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                              <li><a class="dropdown-item" href="#">Action</a></li>
+                                                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                            </ul>
+                                                          </div> 
+                    </div>
+
+             <!--FOOTER-->
+      <footer class="page-footer bg-dark navbar-dark fixed-bottom text-center text-light">
+        <div class="footer-copyright text-center py-3">©2022 Restaurant Management:
+            <a href="#"> KodeGo</a>
+          </div>
+      </footer>       
+</div>
+
+
+    <!-- script for js -->
+    <script src="js/bootstrap.bundle.min.js"></script>     
+</body>
+</html>
