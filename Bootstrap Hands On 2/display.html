@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <!-- link CSS -->
+                <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Display Utilities</title>
+</head>
+<body>
+            <!-- NAV -->
+ <nav class="navbar navbar-expand-lg bg-dark bg-opacity-75">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href="#">Bootstrap Hands On 2</a>
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="/home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="/background.html">Background Utilities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="/borders.html">Border Utilities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="/colors.html">Color Utilities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="/display.html">Display Utilities</a>
+            </li>
+          </ul>
+      </div>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Requirements
+        </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/background.html">Requirement 1</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/borders.html">Requirement 2</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/colors.html">Requirement 3</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/display.html">Requirement 4</a></li>
+          </ul>
+    </div>  
+  </nav>
+    <!-- contaner fluid - for a full width container, spanning the entire width of the viewport -->
+<div class="container-fluid">
+   <div class="container"> 
+    <h2>Display Utilities:</h2> 
+    <p>Display Inline Block vs Block</p>
+</div>
+  <!-- CONTENT BORDER UTILITIES -->
+    <div class="container p-5 bg-primary">
+      <!-- inline-Block -->
+        <div class="d-inline">    
+            <img src="/images/luffy.jpg" class="rounded-0 w-25 border border-dark border-4" alt="...">
+        </div>
+       <div class="d-inline"><img src="/images/sanji.jpg" class="rounded-circle  w-25 border border-dark border-4" alt="..."></div>
+        <div class="d-inline"><img src="/images/zoro2.jpg" class="rounded-0 w-25 border border-dark border-4" alt="..."></div>
+    </div>
+    <div class="container p-5 bg-secondary">
+      <!-- Block -->
+        <div>    
+            <img src="/images/luffy.jpg" class="rounded-0 w-25 border border-dark border-4" alt="...">
+        </div>
+       <div>
+        <img src="/images/sanji.jpg" class="rounded-circle  w-25 border border-dark border-4" alt="..."></div>
+    </div>
+    
+<!-- hide first image in small screen  -->
+    <div class="container"><p>Hide first image in small screen </p></div>
+
+    <div class="container-lg bg-success">
+    
+        <div class="d-lg-inline d-md-inline d-sm-none">    
+        <img src="/images/luffy.jpg" class="rounded-0 w-25 border border-dark border-4" alt="...">
+        </div>
+            <div class="d-inline">
+            <img src="/images/sanji.jpg" class="rounded-circle  w-25 border border-dark border-4" alt="...">
+            </div>
+            
+    </div>
+    <!--  Visible two image in medium screen only-->
+    <div class="container"><p>Visible two image in medium screen only </p></div>
+    
+    <div class="container bg-danger">
+    
+        <div class="d-md-inline d-lg-none d-sm-none">    
+        <img src="/images/luffy.jpg" class="rounded-0 w-25 border border-dark border-4" alt="...">
+        </div>
+            <div class="d-md-inline d-lg-none d-sm-none">
+            <img src="/images/sanji.jpg" class="rounded-circle  w-25 border border-dark border-4" alt="...">
+            </div>
+            
+    </div>
+    <!-- 2nd image visible in small screen -->
+    <div class="container"><p>2nd image visible in small screen </p></div>
+    
+    <div class="container bg-dark">
+    
+        <div class="d-inline">    
+        <img src="/images/luffy.jpg" class="rounded-0 w-25 border border-dark border-4" alt="...">
+        </div>
+            <div class="d-lg-inline d-sm-none d-md-inline">
+            <img src="/images/sanji.jpg" class="rounded-circle  w-25 border border-dark border-4" alt="...">
+            </div>
+            
+    </div>
+
+</div>    
+
+    <!-- script for js -->
+    <script src="js/bootstrap.bundle.min.js"></script>    
+</body>
+</html>
