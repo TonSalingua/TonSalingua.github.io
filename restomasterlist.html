@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/picCaro.css">
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- messenger link -->
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-dc0a556a-aaa0-4ffc-a76f-f2ac6e5c106d"></div>
+
+    <title>Restaurant Lizt</title>
+</head>
+<body>
+    
+  <!-- NAV -->
+<div class="container-fluid">  <!-- to get bootstrap's mobile first-->
+  <nav class="navbar navbar-expand-md navbar-light bg-light container-fluid sticky-top">
+      <div class="container-fluid">
+          <a id="logo-nav" href="index.html" class="navbar-brand">
+              <img src="images/logo.jpg" id="logo" class="border rounded-5" alt="LOGO"> CEBU EATZ
+          </a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav">
+                  <p id="quote">“Life is uncertain. Eat dessert first.”</p>
+              </div>
+              <div class="navbar-nav ms-auto">
+                  <a href="landing.html" class="nav-item nav-link active">Home</a>
+                <!-- dropDown 1 -->
+                <div class="dropdown navbar-style">
+                  <button class="btn border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Restaurant List
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Acacia Steakhouse</a></li>
+                    <li><a class="dropdown-item" href="#">Cafe Laguna</a></li>
+                    <li><a class="dropdown-item" href="#">Casa Verde</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="restomasterlist.html">More</a></li>
+                  </ul>
+                </div>     
+                <!--  -->
+             <!-- dropDown 2 -->
+                <div class="dropdown navbar-style">
+                  <button class="btn border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Top Rated
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Yushoken</a></li>
+                    <li><a class="dropdown-item" href="#">21 Kilometers Coffee</a></li>
+                    <li><a class="dropdown-item" href="#">Tops Cebu</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">More</a></li>
+                  </ul>
+                </div>     
+                <!--  -->
+                <a href="aboutUs.html" class="nav-item nav-link active">About us</a>
+              </div>
+          </div>
+      </div>
+  </nav>
+  <!-- map of cebu -->
+  <div class="container">
+
+    <!-- google maps -->
+<div id="map" class="container d-flex mb-5 mt-5 border-dark rounded-5 border-5">
+    
+    <div class="mapouter container"><div class="gmap_canvas"><h2>Cebu City:</h2><iframe width="auto" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=cebu%20city&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:auto;width:auto;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:auto;width:auto;}</style></div></div>
+
+
+</div>
+
+<!-- carousel cards Affordable-->
+  <div id="carouselExampleControls" class="carousel mb-5" data-bs-ride="carousel">
+    <h2 class="text">Cheap eats</h2>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="card">
+                <div class="img-wrapper"><img src="images/siloganNiG.png" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">Silogan ni Gian</h5>
+                    <p class="text-warning">
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe839;</i>
+                      </p>
+
+                    <!-- <a href="#" class="btn btn-primary">More info</a> -->
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> <i class="material-icons">&#xe55f;</i>Talamban, Cebu City</li>
+                    <li class="list-group-item"> <i class="material-icons">&#xe855;</i>  Open (24 hours)</li>
+                  </ul>                              
+                  <div class="card-body">
+                    <a href="#" class="btn btn-primary">More info</a>
+                  </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+                <div class="img-wrapper"><img src="images/yakski.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">Yakski BBQ</h5>
+                    <p class="text-warning">
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe839;</i>
+                      </p>
+                    <!-- <a href="#" class="btn btn-primary">More info</a> -->
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> <i class="material-icons">&#xe55f;</i>IT Park, Cebu City</li>
+                    <li class="list-group-item"> <i class="material-icons">&#xe855;</i>  Open (24 hours)</li>
+                  </ul>                              
+                  <div class="card-body">
+                    <a href="#" class="btn btn-primary">More info</a>
+                    </div>
+            </div>
+            
+        </div>
+        
+        <div class="carousel-item">
+            <div class="card">
+                <div class="img-wrapper"><img src="images/larsian.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">Larsian Fuente</h5>
+                    <p class="text-warning">
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe839;</i>
+                      </p>
+                    <!-- <a href="#" class="btn btn-primary">More info</a> -->
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> <i class="material-icons">&#xe55f;</i>Fuente, Cebu City</li>
+                    <li class="list-group-item"> <i class="material-icons">&#xe855;</i>  Open (24 hours)</li>
+                  </ul>                              
+                  <div class="card-body">
+                    <a href="#" class="btn btn-primary">More info</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+                <div class="img-wrapper"><img src="images/matias.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">Matias BBQ</h5>
+                    <p class="text-warning">
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe839;</i>
+                      </p>
+                    <!-- <a href="#" class="btn btn-primary">More info</a> -->
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> <i class="material-icons">&#xe55f;</i>AS Fortuna, Mandaue City</li>
+                    <li class="list-group-item"> <i class="material-icons">&#xe855;</i>  Open (24 hours)</li>
+                  </ul>                              
+                  <div class="card-body">
+                    <a href="#" class="btn btn-primary">More info</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+                <div class="img-wrapper"><img src="images/potchero.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">Pochero Kinaraan</h5>
+                    <p class="text-warning">
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe839;</i>
+                      </p>
+                    <!-- <a href="#" class="btn btn-primary">More info</a> -->
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> <i class="material-icons">&#xe55f;</i>Mabolo, Cebu City</li>
+                    <li class="list-group-item"> <i class="material-icons">&#xe855;</i>  Open (24 hours)</li>
+                  </ul>                              
+                  <div class="card-body">
+                    <a href="#" class="btn btn-primary">More info</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+                <div class="img-wrapper"><img src="images/edsnaths.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">Edsnath's Payag</h5>
+                    <p class="text-warning">
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe839;</i>
+                      </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> <i class="material-icons">&#xe55f;</i>Talamban, Cebu City</li>
+                    <li class="list-group-item"> <i class="material-icons">&#xe855;</i>  11:00 AM - 12 MN</li>
+                  </ul>                              
+                  <div class="card-body">
+                    <a href="#" class="btn btn-primary">More info</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- end of carousel Affordable Cards -->
+
+
+<!-- carousel cards with a view-->
+<div id="carouselExampleControls" class="carousel mt-5 mb-5" data-bs-ride="carousel">
+    <h2 class="text">With a view</h2>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="card">
+                <div class="img-wrapper"><img src="images/lavie.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">La Vie in the sky</h5>
+                    <p class="text-warning">
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                      </p>
+                    <!-- <a href="#" class="btn btn-primary">More info</a> -->
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> <i class="material-icons">&#xe55f;</i>Tops Road, Cebu City</li>
+                    <li class="list-group-item"> <i class="material-icons">&#xe855;</i>  Open 9:00 AM - 2:00 AM</li>
+                  </ul>                              
+                  <div class="card-body">
+                    <a href="#" class="btn btn-primary">More info</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+                <div class="img-wrapper"><img src="images/maks.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">Mak's View</h5>
+                    <p class="text-warning">
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                      </p>
+                    <!-- <a href="#" class="btn btn-primary">More info</a> -->
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> <i class="material-icons">&#xe55f;</i>Transcentral Highway Busay, Cebu City</li>
+                    <li class="list-group-item"> <i class="material-icons">&#xe855;</i>  Open 6:00 AM - 9:00 PM</li>
+                  </ul>                              
+                  <div class="card-body">
+                    <a href="#" class="btn btn-primary">More info</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+                <div class="img-wrapper"><img src="images/top.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">Tops Cebu</h5>
+                    <p class="text-warning">
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe839;</i>
+                      </p>
+                    <!-- <a href="#" class="btn btn-primary">More info</a> -->
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> <i class="material-icons">&#xe55f;</i>Busay, Cebu City</li>
+                    <li class="list-group-item"> <i class="material-icons">&#xe855;</i>  Open 10:00 AM - 1:00 AM</li>
+                  </ul>                              
+                  <div class="card-body">
+                    <a href="#" class="btn btn-primary">More info</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+                <div class="img-wrapper"><img src="images/green.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">Green Canopy</h5>
+                    <p class="text-warning">
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe839;</i>
+                      </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> <i class="material-icons">&#xe55f;</i>Busay, Cebu City</li>
+                    <li class="list-group-item"> <i class="material-icons">&#xe855;</i>  Open 4:00 PM - 1:00 AM</li>
+                  </ul>                              
+                  <div class="card-body">
+                    <a href="#" class="btn btn-primary">More info</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+                <div class="img-wrapper"><img src="images/topof.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">Top of Cebu</h5>
+                    <p class="text-warning">
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                      </p>
+                    <!-- <a href="#" class="btn btn-primary">More info</a> -->
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> <i class="material-icons">&#xe55f;</i>Busay, Cebu City</li>
+                    <li class="list-group-item"> <i class="material-icons">&#xe855;</i>  Open 4:00 PM - 1:00 AM</li>
+                  </ul>                              
+                  <div class="card-body">
+                    <a href="#" class="btn btn-primary">More info</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+                <div class="img-wrapper"><img src="images/woods.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">Woods Smokehouse</h5>
+                    <p class="text-warning">
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe839;</i>
+                      </p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> <i class="material-icons">&#xe55f;</i>Busay, Cebu City</li>
+                    <li class="list-group-item"> <i class="material-icons">&#xe855;</i>  Open 4:00 PM - 1:00 AM</li>
+                  </ul>                              
+                  <div class="card-body">
+                    <a href="#" class="btn btn-primary">More info</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- end of carousel with a view -->
+
+<!-- carousel cards within the city-->
+<div id="carouselExampleControls" class="carousel mt-5 mb-5" data-bs-ride="carousel">
+    <h2 class="text">Within the city</h2>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="card">
+                <div class="img-wrapper"><img src="images/moon.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">Moon Cafe</h5>
+                    <p class="text-warning">
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe839;</i>
+                      </p>
+                    <!-- <a href="#" class="btn btn-primary">More info</a> -->
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> <i class="material-icons">&#xe55f;</i>Cebu City</li>
+                    <li class="list-group-item"> <i class="material-icons">&#xe855;</i>  Open 4:00 PM - 1:00 AM</li>
+                  </ul>                              
+                  <div class="card-body">
+                    <a href="#" class="btn btn-primary">More info</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+                <div class="img-wrapper"><img src="images/samgyup.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">Samgyupsalamat</h5>
+                    <p class="text-warning">
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe839;</i>
+                      </p>
+                    <!-- <a href="#" class="btn btn-primary">More info</a> -->
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> <i class="material-icons">&#xe55f;</i>Cebu City</li>
+                    <li class="list-group-item"> <i class="material-icons">&#xe855;</i>  Open 4:00 PM - 1:00 AM</li>
+                  </ul>                              
+                  <div class="card-body">
+                    <a href="#" class="btn btn-primary">More info</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+                <div class="img-wrapper"><img src="images/ikkousha-ramen.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">Ikkousha Ramen Cebu</h5>
+                    <p class="text-warning">
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                      </p>
+                    <!-- <a href="#" class="btn btn-primary">More info</a> -->
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> <i class="material-icons">&#xe55f;</i>Cebu City</li>
+                    <li class="list-group-item"> <i class="material-icons">&#xe855;</i>  Open 4:00 PM - 1:00 AM</li>
+                  </ul>                              
+                  <div class="card-body">
+                    <a href="#" class="btn btn-primary">More info</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+                <div class="img-wrapper"><img src="images/lighthouse.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Lighthouse Restaurant</h5>
+                    <p class="text-warning">
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe839;</i>
+                      </p>
+                    <!-- <a href="#" class="btn btn-primary">More info</a> -->
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> <i class="material-icons">&#xe55f;</i>Cebu City</li>
+                    <li class="list-group-item"> <i class="material-icons">&#xe855;</i>  Open 4:00 PM - 1:00 AM</li>
+                  </ul>                              
+                  <div class="card-body">
+                    <a href="#" class="btn btn-primary">More info</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+                <div class="img-wrapper"><img src="images/buff.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">Buffet 101 cebu</h5>
+                    <p class="text-warning">
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe839;</i>
+                      </p>
+                    <!-- <a href="#" class="btn btn-primary">More info</a> -->
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> <i class="material-icons">&#xe55f;</i>Cebu City</li>
+                    <li class="list-group-item"> <i class="material-icons">&#xe855;</i>  Open 4:00 PM - 1:00 AM</li>
+                  </ul>                              
+                  <div class="card-body">
+                    <a href="#" class="btn btn-primary">More info</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card">
+                <div class="img-wrapper"><img src="images/puso.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="card-body">
+                    <h5 class="card-title">Pusô Restaurant & Café</h5>
+                    <p class="text-warning">
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe838;</i>
+                        <i class="material-icons">&#xe839;</i>
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">More info</a> -->
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"> <i class="material-icons">&#xe55f;</i>Cebu City</li>
+                    <li class="list-group-item"> <i class="material-icons">&#xe855;</i>  Open 4:00 PM - 1:00 AM</li>
+                  </ul>                              
+                  <div class="card-body">
+                    <a href="#" class="btn btn-primary">More info</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- end of carousel within the city -->
+
+<!-- footer -->
+<footer>
+    <div class="footer-content">  
+        <div class="d-flex justify-content-center">
+          <img src="images/logo.jpg" id="logo" class="border rounded-5 me-2" alt="LOGO">
+          <h2 id="foot-t">Cebu EATZ Phillippines</h2>
+        </div>
+          <ul class="socials">
+            <li><a href="#"> <i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"> <i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"> <i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"> <i class="fa fa-google"></i></a></li>
+            <li><a href="#"> <i class="fa fa-youtube"></i></a></li>
+          </ul>
+      </div>
+      <div class="footer-bottom container text-center">
+        <p>copyright &COPY;2022 Ton Salingua. Sponsored by <span>KodeGo</span></p>
+      </div>   
+     
+</footer>
+
+
+
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<!-- bootstrap js -->
+<script src="js/bootstrap.bundle.min.js"></script>   
+<script src="js/index.js"></script> 
+</body>
+</html>
