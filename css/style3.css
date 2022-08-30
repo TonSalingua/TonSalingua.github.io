@@ -1,0 +1,44 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+} */
+
+.wrapper{
+width: 100%;
+}
+
+.wrapper .carousel{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.carousel .card{
+  background: rebeccapurple;
+  line-height: 250px;
+  text-align: center;
+  color: aliceblue;
+  margin: 20px 0;
+  box-shadow: 0px 4px 15px rgb(0, 0, 0);
+
+}
+
+.carousel .card-1{
+  background: red;
+}
+
+.carousel .card-2{
+  background: rgb(0, 255, 42);
+}
+
+.carousel .card-3{
+  background: rgb(25, 0, 255);
+}
+.carousel .card-4{
+  background: rgb(255, 0, 191);
+}
+.carousel .card-5{
+  background: red;
+}
